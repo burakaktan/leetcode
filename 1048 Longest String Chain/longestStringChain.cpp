@@ -30,7 +30,7 @@ public:
             for(int i = 0;i < w.size();i++)
             {
                 string pred;
-                    pred =  w.substr(0,i) + w.substr(i+1);
+                pred =  w.substr(0,i) + w.substr(i+1);
                 if(p.find(pred) != p.end())
                 {
                     ans[j] = max(ans[j],ans[p[pred]]+1);
