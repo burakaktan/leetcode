@@ -2,6 +2,16 @@ class Solution {
 public:
 /*
 main idea: sort the products alphabetically, then use two pointer method
+Time Complexity:
+    main factor that increases time complexity is sorting.
+    There are nlogn string comparisons in sorting
+    Each string comparison may consist of at most m character comparison
+    Therefore, time complexity is O(m*nlogn)
+Space Complexity:
+    main factor that increases space complexity is storing "ans" before returning it
+    There can be at most 3*m strings in ans, each can have at most m characters
+    Therefore, space complexity is O(m^2)
+Where n is number of strings in "products" and m is maximum length of an input string.
 */
     vector<vector<string>> suggestedProducts(vector<string>& products, string searchWord) {
         sort(products.begin(),products.end());
