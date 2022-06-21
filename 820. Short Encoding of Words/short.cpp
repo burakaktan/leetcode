@@ -6,7 +6,7 @@
         Add reverse of input strings to a Trie
         answer is sum(depth+1) for all leaf nodes in the Trie
         (+1 is to count # signs)
-    */
+*/
 class Solution {
 public:
     typedef struct Trie
