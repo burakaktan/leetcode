@@ -8,7 +8,7 @@ public:
     Main idea:
     Sort the courses according to deadlines (if deadlines are the same compare by durations)
     set current time to 0
-    Iterate through the courses, if a current_time + duration <= deadline take the course
+    Iterate through the courses, if a current_time + duration <= deadline, take the course and update the current time
     Else, try to drop te longest course taken, if it will help to take the current course
     (for finding and dropping the longest course taken, priority queue is used)
     return the size of the priority queue (number of taken courses)
